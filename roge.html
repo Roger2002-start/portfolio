@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>N.R Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= MAIN PAGE ================= -->
+
+    <div class="website">
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <div class="logo">
+                N.R
+            </div>
+
+            <nav class="navbar">
+
+                <a href="#home">HOME</a>
+
+                <a href="#about">ABOUT</a>
+
+                <a href="#services">SERVICES</a>
+
+                <a href="#contact">CONTACT</a>
+
+                <a href="#blog">BLOG</a>
+
+                <a href="#" onclick="openLogin(); return false;">
+                    LOGIN
+                </a>
+
+                <a href="#" onclick="openSignup(); return false;">
+                    SIGN UP
+                </a>
+
+            </nav>
+
+            <!-- Mobile menu -->
+
+            <button class="menu-button" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </header>
+
+
+        <!-- ================= HOME ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    HELLO, MY NAME IS
+                </p>
+
+                <h1>
+                    Niyonkuru Roger
+                </h1>
+
+                <h2>
+                    Software Development Student
+                </h2>
+
+                <p class="description">
+                    I am a software development student who enjoys
+                    creating websites and learning modern technologies.
+                    I use HTML, CSS and JavaScript to build simple,
+                    attractive and responsive websites.
+                </p>
+
+                <button class="green-button" onclick="scrollToContact()">
+                    GET IN TOUCH
+                </button>
+
+            </div>
+
+            <div class="hero-image">
+                <div class="image-background">
+                    <img
+                        
+                           </div>
+
+        </section>
+
+        <!-- ================= WORKED WITH ================= -->
+
+        <section class="worked-section">
+
+            <h2>
+                worked with
+            </h2>
+
+            <div class="companies">
+
+                <div class="company clickup">
+                    click up
+                </div>
+
+                <div class="company dropbox">
+                    dropbox
+                </div>
+
+                <div class="company paychex">
+                    paychex
+                </div>
+
+                <div class="company elastic">
+                    elastic
+                </div>
+
+                <div class="company box">
+                    box
+                </div>
+
+            </div>
+       </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section section" id="about">
+
+            <div class="section-title">
+
+                <span>ABOUT ME</span>
+
+                <h2>
+                    Who I Am
+                </h2>
+
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-image">
+                    <div class="about-image-box">
+                        <img                     
+                              <div class="about-text">
+
+                    <h3>
+                        I'm Niyonkuru Roger
+                    </h3>
+                    <p>
+                        I am a software development student with an
+                        interest in web development and technology.
+                        I enjoy learning how websites are designed
+                        and how they work.
+                    </p>
+
+                    <p>
+                        I am currently developing my skills in
+                        HTML, CSS, JavaScript and other programming
+                    <!DOCTYPE html>
+<html lang="rw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Yanjye</title>
+    <style>
+        /* Imiterere rusange y'urubuga */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Agasanduku k'Umushinga (Project Card) */
+        .portfolio-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        /* Iyo ukoze hover ku gasanduku kabyimbuka gacye */
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Imiterere y'ifoto yawe */
+        .portfolio-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover; /* Ibi bituma ifoto yifata neza itanyenyegaye */
+            display: block;
+        }
+
+        /* Inyandiko ziri munsi y'ifoto */
+        .portfolio-content {
+            padding: 20px;
+        }
+
+        .portfolio-title {
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+            color: #333333;
+        }
+
+        .portfolio-text {
+            margin: 0 0 20px 0;
+            color: #666666;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        /* Bouton y'akazi kanyu */
+        .portfolio-btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .portfolio-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Agasanduku gahuriza hamwe ifoto n'inyandiko za Portfolio -->
+    <div class="portfolio-card">
+        <!-- 1. Ifoto yawe iri hano -->
+        <img src="ifoto_yawe.jpg" alt="Aba-developers bari gukorera kuri laptop" class="portfolio-img">
+        
+        <!-- 2. Inyandiko z'umushinga ziri hano -->
+        <div class="portfolio-content">
+            <h3 class="portfolio-title">Urugero rw'Umushinga Wanjye</h3>
+            <p class="portfolio-text">
+                Hano ni mu gihe twari mu gikorwa cyo gukora code (Coding Session). Twari turi kwandika ama-program atandukanye no gukemura ibibazo (problem-solving) dukoresheje mudasobwa.
+            </p>
+            <a href="#" class="portfolio-btn">Reba Project</a>
+        </div>
+    </div>
+
+</body>
+</html>    technologies.
+                    </p>
+
+                    <button class="green-button" onclick="downloadCV()">
+                        DOWNLOAD CV
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section class="services-section section" id="services">
+
+            <div class="section-title">
+
+                <span>MY SERVICES</span>
+
+                <h2>
+                    What I Can Do
+                </h2>
+
+            </div>
+
+
+            <div class="services-container">
+
+                <!-- SERVICE 1 -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        I can create websites using HTML,
+                        CSS and JavaScript.
+                    </p>
+
+                </div>
+
+
+                <!-- SERVICE 2 -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Web Design
+                    </h3>
+
+                    <p>
+                        I can design simple, clean and attractive
+                        website interfaces.
+                    </p>
+
+                </div>
+
+
+                <!-- SERVICE 3 -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        ◉
+                    </div>
+
+                    <h3>
+                        Responsive Design
+                    </h3>
+
+                    <p>
+                        I can make websites responsive for
+                        computers, tablets and phones.
+                    </p>
+
+                </div>
+
+
+                <!-- SERVICE 4 -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        JS
+                    </div>
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <p>
+                        I can add interactive features and
+                        functionality using JavaScript.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="projects-section section">
+
+            <div class="section-title">
+
+                <span>MY WORK</span>
+
+                <h2>
+                    Recent Projects
+                </h2>
+
+            </div>
+
+
+            <div class="projects-container">
+
+                <div class="project-card">
+
+                    <div class="project-top blue">
+                        HTML
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>
+                            Personal Portfolio
+                        </h3>
+
+                        <p>
+                            A personal portfolio website created
+                            with HTML and CSS.
+                        </p>
+
+                        <button onclick="viewProject('Portfolio')">
+                            VIEW PROJECT
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-top green">
+                        CSS
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>
+                            Calculator
+                        </h3>
+
+                        <p>
+                            A functional calculator interface
+                            created using HTML, CSS and JavaScript.
+                        </p>
+
+                        <button onclick="viewProject('Calculator')">
+                            VIEW PROJECT
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-top orange">
+                        JS
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>
+                            Student Website
+                        </h3>
+
+                        <p>
+                            A simple student information website
+                            with interactive features.
+                        </p>
+
+                        <button onclick="viewProject('Student Website')">
+                            VIEW PROJECT
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BLOG ================= -->
+
+        <section class="blog-section section" id="blog">
+
+            <div class="section-title">
+
+                <span>MY BLOG</span>
+
+                <h2>
+                    Latest Articles
+                </h2>
+
+            </div>
+
+
+            <div class="blog-container">
+
+                <article class="blog-card">
+
+                    <div class="blog-image">
+                        HTML
+                    </div>
+
+                    <div class="blog-content">
+
+                        <small>
+                            WEB DEVELOPMENT
+                        </small>
+
+                        <h3>
+                            Learning HTML
+                        </h3>
+
+                        <p>
+                            HTML is used to create the structure
+                            of web pages.
+                        </p>
+
+                        <a href="#">
+                            READ MORE →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="blog-card">
+
+                    <div class="blog-image green-bg">
+                        CSS
+                    </div>
+
+                    <div class="blog-content">
+
+                        <small>
+                            WEB DESIGN
+                        </small>
+
+                        <h3>
+                            Learning CSS
+                        </h3>
+
+                        <p>
+                            CSS helps us style and design
+                            beautiful websites.
+                        </p>
+
+                        <a href="#">
+                            READ MORE →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="blog-card">
+
+                    <div class="blog-image orange-bg">
+                        JS
+                    </div>
+
+                    <div class="blog-content">
+
+                        <small>
+                            PROGRAMMING
+                        </small>
+
+                        <h3>
+                            Learning JavaScript
+                        </h3>
+
+                        <p>
+                            JavaScript allows us to make websites
+                            interactive.
+                        </p>
+
+                        <a href="#">
+                            READ MORE →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact-section section" id="contact">
+
+            <div class="section-title">
+
+                <span>CONTACT ME</span>
+
+                <h2>
+                    Let's Work Together
+                </h2>
+
+            </div>
+
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+
+                    <h3>
+                        Get In Touch
+                    </h3>
+
+                    <p>
+                        If you want to contact me, you can
+                        send me a message using the form.
+                    </p>
+
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        niyonkururoger93@gmail.com
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>Location:</strong>
+                        Rwanda
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>Field:</strong>
+                        Software Development
+                    </div>
+
+                </div>
+
+
+                <form id="contactForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="Subject"
+                        required
+                    >
+
+                    <textarea
+                        id="message"
+                        placeholder="Your Message"
+                        required
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="green-button"
+                    >
+                        SEND MESSAGE
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <div class="footer-logo">
+                N.R
+            </div>
+
+            <p>
+                Niyonkuru Roger — Software Development Student
+            </p>
+
+            <div class="social-links">
+
+                <a href="#">Facebook</a>
+
+                <a href="#">Instagram</a>
+
+                <a href="#">LinkedIn</a>
+
+                <a href="#">GitHub</a>
+
+            </div>
+
+            <p class="copyright">
+                © <span id="year"></span> N.R Portfolio. All Rights Reserved.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- ================= LOGIN POPUP ================= -->
+
+    <div class="modal" id="loginModal">
+
+        <div class="modal-box">
+
+            <button class="close-button" onclick="closeLogin()">
+                ×
+            </button>
+
+            <h2>
+                Login
+            </h2>
+
+            <p>
+                Login to your account
+            </p>
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password"
+            >
+
+            <button
+                class="modal-button"
+                onclick="loginUser()"
+            >
+                LOGIN
+            </button>
+
+            <p class="modal-text">
+                Don't have an account?
+                <a href="#" onclick="switchToSignup(); return false;">
+                    Sign Up
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= SIGN UP POPUP ================= -->
+
+    <div class="modal" id="signupModal">
+
+        <div class="modal-box">
+
+            <button class="close-button" onclick="closeSignup()">
+                ×
+            </button>
+
+            <h2>
+                Sign Up
+            </h2>
+
+            <p>
+                Create your account
+            </p>
+
+            <input
+                type="text"
+                id="signupName"
+                placeholder="Full Name"
+            >
+
+            <input
+                type="email"
+                id="signupEmail"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                id="signupPassword"
+                placeholder="Password"
+            >
+
+            <button
+                class="modal-button"
+                onclick="signupUser()"
+            >
+                SIGN UP
+            </button>
+
+            <p class="modal-text">
+                Already have an account?
+                <a href="#" onclick="switchToLogin(); return false;">
+                    Login
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+/home/roger/Downloads/1784461361954.jpg
+</html>

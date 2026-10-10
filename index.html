@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.R Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ================= MAIN PAGE ================= -->
+    <div class="website">
+                <!-- ================= HEADER ================= -->
+        <header class="header">
+            <div class="logo">N.R</div>
+            <nav class="navbar">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#blog">BLOG</a>
+                <a href="#" onclick="openLogin(); return false;">LOGIN</a>
+                <a href="#" onclick="openSignup(); return false;">SIGN UP</a>
+            </nav>
+            <!-- Mobile menu -->
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+        </header>
+        <!-- ================= HOME ================= -->
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p class="small-title">HELLO, MY NAME IS</p>
+                <h1>Niyonkuru Roger</h1>
+                <h2>Software Development Student</h2>
+                <p class="description">
+                    I am a software development student who enjoys creating websites and learning modern technologies. I use HTML, CSS and JavaScript to build simple, attractive and responsive websites.
+                </p>
+                <button class="green-button" onclick="scrollToContact()">GET IN TOUCH</button>
+            </div>
+            <div class="hero-image">
+                <div class="image-background">
+                    <!-- IFOTO YA KABIRI IRI HANO (Ushobora guhindura 'ifoto_ya_roger.jpg') -->
+                    <img src="ifoto_ya_roger.jpg" alt="Niyonkuru Roger" class="profile-img">
+                </div>
+            </div>
+        </section>
+        <!-- ================= WORKED WITH ================= -->
+        <section class="worked-section">
+            <h2>worked with</h2>
+            <div class="companies">
+                <div class="company clickup">click up</div>
+                <div class="company dropbox">dropbox</div>
+                <div class="company paychex">paychex</div>
+                <div class="company elastic">elastic</div>
+                <div class="company box">box</div>
+            </div>
+        </section>
+        <!-- ================= ABOUT ================= -->
+        <section class="about-section section" id="about">
+            <div class="section-title">
+                <span>ABOUT ME</span>
+                <h2>Who I Am</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-box">
+                        <!-- IFOTO YA MBERE IRI HANO (Ushobora guhindura 'about_me.jpg') -->
+                        <img src="/home/roger/Downloads/1784461361954.jpg" alt="About Roger" class="about-img">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>I'm Niyonkuru Roger</h3>
+                    <p>
+                        I am a software development student with an interest in web development and technology. I enjoy learning how websites are designed and how they work.
+                    </p>
+                    <p>
+                        I am currently developing my skills in HTML, CSS, JavaScript and other programming technologies.
+                    </p>
+                    <button class="green-button" onclick="downloadCV()">DOWNLOAD CV</button>
+                </div>
+            </div>
+        </section>
+        <!-- ================= SERVICES ================= -->
+        <section class="services-section section" id="services">
+            <div class="section-title">
+                <span>MY SERVICES</span>
+                <h2>What I Can Do</h2>
+            </div>
+            <div class="services-container">
+                <!-- SERVICE 1 -->
+                <div class="service-card">
+                    <div class="service-icon">&lt;/&gt;</div>
+                    <h3>Web Development</h3>
+                    <p>I can create websites using HTML, CSS and JavaScript.</p>
+                </div>
+                <!-- SERVICE 2 -->
+                <div class="service-card">
+                    <div class="service-icon">✦</div>
+                    <h3>Web Design</h3>
+                    <p>I can design simple, clean and attractive website interfaces.</p>
+                </div>
+                <!-- SERVICE 3 -->
+                <div class="service-card">
+                    <div class="service-icon">◉</div>
+                    <h3>Responsive Design</h3>
+                    <p>I can make websites responsive for computers, tablets and phones.</p>
+                </div>
+                <!-- SERVICE 4 -->
+                <div class="service-card">
+                    <div class="service-icon">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>I can add interactive features and functionality using JavaScript.</p>
+                </div>
+            </div>
+        </section>
+        <!-- ================= PROJECTS ================= -->
+        <section class="projects-section section">
+            <div class="section-title">
+                <span>MY WORK</span>
+                <h2>Recent Projects</h2>
+            </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-top blue">HTML</div>
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>A personal portfolio website created with HTML and CSS.</p>
+                        <button onclick="viewProject('Portfolio')">VIEW PROJECT</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-top green">CSS</div>
+                    <div class="project-info">
+                        <h3>Calculator</h3>
+                        <p>A functional calculator interface created using HTML, CSS and JavaScript.</p>
+                        <button onclick="viewProject('Calculator')">VIEW PROJECT</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-top orange">JS</div>
+                    <div class="project-info">
+                        <h3>Student Website</h3>
+                        <p>A simple student information website with interactive features.</p>
+                        <button onclick="viewProject('Student Website')">VIEW PROJECT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================= BLOG ================= -->
+        <section class="blog-section section" id="blog">
+            <div class="section-title">
+                <span>MY BLOG</span>
+                <h2>Latest Articles</h2>
+            </div>
+            <div class="blog-container">
+                <article class="blog-card">
+                    <div class="blog-image">HTML</div>
+                    <div class="blog-content">
+                        <small>WEB DEVELOPMENT</small>
+                        <h3>Learning HTML</h3>
+                        <p>HTML is used to create the structure of web pages.</p>
+                        <a href="#">READ MORE →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image green-bg">CSS</div>
+                    <div class="blog-content">
+                        <small>WEB DESIGN</small>
+                        <h3>Learning CSS</h3>
+                        <p>CSS helps us style and design beautiful websites.</p>
+                        <a href="#">READ MORE →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image orange-bg">JS</div>
+                    <div class="blog-content">
+                        <small>PROGRAMMING</small>
+                        <h3>Learning JavaScript</h3>
+                        <p>JavaScript allows us to make websites interactive.</p>
+                        <a href="#">READ MORE →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- ================= CONTACT ================= -->
+        <section class="contact-section section" id="contact">
+            <div class="section-title">
+                <span>CONTACT ME</span>
+                <h2>Let's Work Together</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>If you want to contact me, you can send me a message using the form.</p>
+                    <div class="contact-item"><strong>Email:</strong> niyonkururoger93@gmail.com</div>
+                    <div class="contact-item"><strong>Location:</strong> Rwanda</div>
+                    <div class="contact-item"><strong>Field:</strong> Software Development</div>
+                </div>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="green-button">SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Dashboard</title>
+  <style>
+    /* Reset and Layout Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: #f4f6f9;
+    }
+
+    /* 1. SIDEBAR STYLING (Igice cy'ibumoso) */
+    .sidebar {
+      width: 260px;
+      background-color: #1e293b;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    .sidebar a {
+      color: #cbd5e1;
+      text-decoration: none;
+      padding: 12px 15px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover, .sidebar a.active {
+      background-color: #334155;
+      color: #fff;
+    }
+
+    /* 2. MAIN CONTENT STYLING (Igice cy'iburyo) */
+    .main-content {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 15px;
+    }
+
+    .header h1 {
+      color: #0f172a;
+    }
+
+    /* 3. DASHBOARD CARDS (Utugakarita tw'Amakuru) */
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      border-left: 5px solid #3b82f6;
+    }
+
+    .card.green { border-left-color: #10b981; }
+    .card.purple { border-left-color: #8b5cf6; }
+
+    .card h3 {
+      font-size: 0.9rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #1e293b;
+    }
+
+    /* Table for Recent Projects */
+    .project-table {
+      width: 100%;
+      background: #fff;
+      border-collapse: collapse;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .project-table th, .project-table td {
+      padding: 15px;
+      text-align: left;
+    }
+
+    .project-table th {
+      background-color: #f8fafc;
+      color: #64748b;
+      font-weight: bold;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .project-table td {
+      border-bottom: 1px solid #f1f5f9;
+      color: #334155;
+    }
+
+    .status {
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    .status.live { background-color: #d1fae5; color: #065f46; }
+    .status.progress { background-color: #fef3c7; color: #92400e; }
+  </style>
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <div class="sidebar">
+    <h2>Admin Panel</h2>
+    <a href="#" class="active">Dashboard</a>
+    <a href="#">My Projects</a>
+    <a href="#">Messages</a>
+    <a href="#">Blog Posts</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <!-- MAIN DISPLAY AREA -->
+  <div class="main-content">
+    <div class="header">
+      <h1>Welcome Back, Developer!</h1>
+      <p style="color: #64748b;">October 2026</p>
+    </div>
+
+    <!-- STATS CARDS -->
+    <div class="stats-container">
+      <div class="card">
+        <h3>Total Projects</h3>
+        <p>12</p>
+      </div>
+      <div class="card green">
+        <h3>Total Views</h3>
+        <p>1,240</p>
+      </div>
+      <div class="card purple">
+        <h3>New Messages</h3>
+        <p>5</p>
+      </div>
+    </div>
+
+    <!-- RECENT PROJECTS TABLE -->
+    <h2>Recent Projects</h2>
+    <table class="project-table" style="margin-top: 15px;">
+      <thead>
+        <tr>
+          <th>Project Name</th>
+          <th>Category</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>E-commerce Website</td>
+          <td>Web Development</td>
+          <td><span class="status live">Live</span></td>
+        </tr>
+        <tr>
+          <td>Mobile Banking App</td>
+          <td>UI/UX Design</td>
+          <td><span class="status progress">In Progress</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
+
